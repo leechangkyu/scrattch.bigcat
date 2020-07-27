@@ -1,0 +1,10 @@
+Package: scrattch.bigcat
+Type: Package
+Title: scrattch.hicat for big data
+Version: 0.1.0
+Author: zizhen yao <zizheny@alleninstitute.org>
+Maintainer: zizhen yao <zizheny@alleninstitute.org>
+Description: scrattch.hicat for big data
+License: 
+Encoding: UTF-8
+LazyData: true

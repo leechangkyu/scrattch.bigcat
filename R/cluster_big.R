@@ -78,11 +78,12 @@ big_dat_apply <- function(big.dat, cols, p.FUN, .combine="c",  ncores=1, block.s
   {
     require(foreach)
     require(doParallel)
+    require(parallel)
     if (ncores == 1) {
       registerDoSEQ()
     }
     else {
-      cl <- makeForkCluster(ncores)
+      cl <- parallel::makeCluster(ncores)
       doParallel::registerDoParallel(cl)
       on.exit(parallel::stopCluster(cl), add = TRUE)
     }
